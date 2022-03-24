@@ -8,6 +8,11 @@ Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
 Big-O gösterimini yazınız.
 O(n^2)
 
+Time Complexity: Average case: Aradığımız sayının ortada olması,Worst case: Aradığımız sayının sonda olması, Best case: Aradığımız sayının dizinin en başında olması.
+Average case:O(n^2)
+Worst case:O(n^2)
+Best case:O(n)
+
 Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.
 Average case
 
