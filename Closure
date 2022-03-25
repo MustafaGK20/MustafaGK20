@@ -1,0 +1,27 @@
+
+def outer(person):
+
+    def wrapper(*args):
+        people = person
+        age = []
+        for i in people:
+            age.append(i[-4:-2])
+            age.sort()
+        people_new = []
+        for i in age:
+            for j in people:
+                if j[-4:-2] == i:
+                    people_new.append(j)
+                    people.remove(j)
+                    break
+                else:
+                    continue
+        people = people_new
+        for i in people:
+            if i[-1] == "M" or i[-1] == "m":
+                print("Mr.",i[:-4].title())
+            else:
+                print("Ms.",i[:-4].title())
+    return wrapper
+h = outer(person = [input() for _ in range(int(input()))])
+h()
